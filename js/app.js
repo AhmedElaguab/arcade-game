@@ -30,6 +30,9 @@ class Enemy {
 // a handleInput() method.
 class Player {
     constructor() {
+        // Set initial player positions
+        this.x = 202;
+        this.y = 395;
 
         // The image/sprite for our player
         this.sprite = 'images/char-boy.png';
