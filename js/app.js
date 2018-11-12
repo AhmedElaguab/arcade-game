@@ -47,8 +47,17 @@ class Player {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
 
-    handleInput() {
-
+    // Configure player moves
+    handleInput(key) {
+        if(key === 'right' && this.x < 404) {
+            this.x += 101;
+        } else if(key === 'left' && this.x > 0) {
+            this.x -= 101;
+        } else if(key === 'up' && this.y > -20) {
+            this.y -= 83;
+        } else if(key === 'down' && this.y < 395) {
+            this.y += 83;
+        };
     }
 };
 
