@@ -55,8 +55,13 @@ class Player {
 
     }
 
-    update(dt) {
+    update() {
 
+        // Reset the player to the initial position when reach water
+        if (this.y < 0) {
+            this.x = 202;
+            this.y = 395;
+        }
     }
 
     render() {
