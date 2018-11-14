@@ -31,6 +31,12 @@ class Enemy {
             this.x = -100;
             this.speed = Math.floor(Math.random() * 500) + 100;
         }
+
+        // Reset game when vehicle & player collision
+        if (this.x - player.x > -65 && this.x - player.x < 65 && this.y - player.y > -50 && this.y - player.y < 50) {
+            player.x = 202;
+            player.y = 395;
+        }
     }
 
     // Draw the enemy on the screen, required method for game
