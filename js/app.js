@@ -25,6 +25,12 @@ class Enemy {
 
         // Make enemies move
         this.x += this.speed * dt;
+
+        // Make enemies movement inside the game interval
+        if(this.x > 555) {
+            this.x = -100;
+            this.speed = Math.floor(Math.random() * 500) + 100;
+        }
     }
 
     // Draw the enemy on the screen, required method for game
