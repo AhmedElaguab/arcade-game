@@ -1,8 +1,12 @@
 // Enemies our player must avoid
 class Enemy {
-    constructor() {
+    constructor(y) {
         // Variables applied to each of our instances go here,
         // we've provided one for you to get started
+
+        // Enemies X & Y position properties
+        this.x = Math.floor(Math.random() * 404);
+        this.y = y;
 
         // The image/sprite for our enemies, this uses
         // a helper we've provided to easily load images
