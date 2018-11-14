@@ -66,6 +66,9 @@ class Player {
 };
 
 
+// Place the three enemies rows in an array
+const enemiesRows = [63, 146, 229];
+
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 const allEnemies = [];
