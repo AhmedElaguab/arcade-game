@@ -8,6 +8,9 @@ class Enemy {
         this.x = Math.floor(Math.random() * 404);
         this.y = y;
 
+        // Random Enemy initial speed
+        this.speed = Math.floor(Math.random() * 500) + 100;
+
         // The image/sprite for our enemies, this uses
         // a helper we've provided to easily load images
         this.sprite = 'images/enemy-bug.png';
@@ -19,6 +22,9 @@ class Enemy {
         // You should multiply any movement by the dt parameter
         // which will ensure the game runs at the same speed for
         // all computers.
+
+        // Make enemies move
+        this.x += this.speed * dt;
     }
 
     // Draw the enemy on the screen, required method for game
@@ -73,7 +79,7 @@ const enemiesRows = [63, 146, 229];
 // Place all enemy objects in an array called allEnemies
 const allEnemies = [];
 
-// Instantiate enemies and push them to allEnemies array
+// Instantiate enemies & push them to allEnemies array
 enemiesRows.forEach((enemyRow) => {
     allEnemies.push(new Enemy(enemyRow));
 });
