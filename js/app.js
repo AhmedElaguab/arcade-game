@@ -73,6 +73,11 @@ const enemiesRows = [63, 146, 229];
 // Place all enemy objects in an array called allEnemies
 const allEnemies = [];
 
+// Instantiate enemies and push them to allEnemies array
+enemiesRows.forEach((enemyRow) => {
+    allEnemies.push(new Enemy(enemyRow));
+});
+
 // Place the player object in a variable called player
 const player = new Player();
 
