@@ -1,5 +1,6 @@
 // Declare score variables
 const hearts = document.getElementById('hearts');
+const score = document.getElementById('score');
 
 // Enemies our player must avoid
 class Enemy {
@@ -73,6 +74,9 @@ class Player {
         if (this.y < 0) {
             this.x = 202;
             this.y = 395;
+
+            // Increase the score when player reach the water
+            score.textContent = Number(score.textContent) + 1;
         }
     }
 
