@@ -2,6 +2,10 @@
 const hearts = document.getElementById('hearts');
 const score = document.getElementById('score');
 
+// Declare final score variables
+const result = document.getElementsByClassName('result-wrapper')[0];
+const finalScore = document.getElementById('final-score');
+
 // Enemies our player must avoid
 class Enemy {
     constructor(y) {
@@ -43,6 +47,12 @@ class Enemy {
 
             // Decrease number of hearts
             hearts.textContent = Number(hearts.textContent) - 1;
+
+            // Show game over message when number of hearts equal '0'
+            if(hearts.textContent === '0') {
+                result.style.display = 'flex';
+                finalScore.textContent = score.textContent;
+            }
         }
     }
 
