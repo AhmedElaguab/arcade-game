@@ -1,3 +1,28 @@
 body {
     text-align: center;
 }
+
+.score-wrapper {
+    background-color: #607D8B;
+    color: #fff;
+    width: 505px;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 11px 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hearts,
+.score {
+    display: inline;
+    position: relative;
+}
+
+.hearts img {
+    height: 40px;
+    position: absolute;
+    top: -8px;
+    left: -30px;
+}
