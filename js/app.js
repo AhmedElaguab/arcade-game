@@ -1,3 +1,6 @@
+// Declare score variables
+const hearts = document.getElementById('hearts');
+
 // Enemies our player must avoid
 class Enemy {
     constructor(y) {
@@ -36,6 +39,9 @@ class Enemy {
         if (this.x - player.x > -65 && this.x - player.x < 65 && this.y - player.y > -50 && this.y - player.y < 50) {
             player.x = 202;
             player.y = 395;
+
+            // Decrease number of hearts
+            hearts.textContent = Number(hearts.textContent) - 1;
         }
     }
 
