@@ -47,3 +47,18 @@ body {
     padding: 50px 125px;
     border-radius: 5px;
 }
+
+.result p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+#restart-game {
+    color: #fff;
+    background-color: #607D8B;
+    padding: 9px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}

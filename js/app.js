@@ -137,3 +137,13 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
+
+
+// Restart game when Play Again button clicked
+const restartGame = document.getElementById('restart-game');
+
+restartGame.addEventListener('click', () => {
+    result.style.display = 'none';
+    score.textContent = 0;
+    hearts.textContent = 3;
+});
