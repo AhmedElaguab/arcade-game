@@ -5,11 +5,13 @@ A Classic Arcade Game Clone.
 
 ## Getting Started
 
-To start playing this game, you have to either download or clone it to your machine.
+* To start playing this game, you have first to either download or clone it to your machine.
 
 ```
 git clone http://www.github.com/AhmedELaguab/arcade-game
 ```
+
+* Then simply open `index.html` file and start playing the game.
 
 
 ## How the Game Works
@@ -28,8 +30,8 @@ In this game you have a Player and Enemies (bugs). The goal of the player is to 
 
 ## Screenshots
 
-![Classic Arcade Game Clone screensot](screensots/Screenshot-1.png)
-![Classic Arcade Game Clone screensot](screensots/Screenshot-2.png)
+![Classic Arcade Game Clone screenshot](screenshots/Screenshot-1.png)
+![Classic Arcade Game Clone screenshot](screenshots/Screenshot-2.png)
 
 
 ## Built With
@@ -42,3 +44,11 @@ In this game you have a Player and Enemies (bugs). The goal of the player is to 
 ## Contributing
 
 This repository is my code to pass the third Project of Udacity Front-End Developer Nanodegree Program. Therefore, I most likely will not accept pull requests.
+
+For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+
+
+## Authors
+
+* **[AhmedElaguab](https://github.com/AhmedElaguab)** - development
+* **[Udacity](https://github.com/udacity)** - development
