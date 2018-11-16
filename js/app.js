@@ -1,3 +1,5 @@
+'use strict';
+
 // Declare score variables
 const hearts = document.getElementById('hearts');
 const score = document.getElementById('score');
@@ -9,8 +11,6 @@ const finalScore = document.getElementById('final-score');
 // Enemies our player must avoid
 class Enemy {
     constructor(y) {
-        // Variables applied to each of our instances go here,
-        // we've provided one for you to get started
 
         // Enemies X & Y position properties
         this.x = Math.floor(Math.random() * 404);
@@ -24,12 +24,8 @@ class Enemy {
         this.sprite = 'images/enemy-bug.png';
     }
 
-    // Update the enemy's position, required method for game
     // Parameter: dt, a time delta between ticks
     update(dt) {
-        // You should multiply any movement by the dt parameter
-        // which will ensure the game runs at the same speed for
-        // all computers.
 
         // Make enemies move
         this.x += this.speed * dt;
@@ -64,9 +60,7 @@ class Enemy {
 
 
 
-// Now write your own player class
-// This class requires an update(), render() and
-// a handleInput() method.
+// Our player class
 class Player {
     constructor() {
         // Set initial player positions
@@ -104,7 +98,7 @@ class Player {
             this.y -= 83;
         } else if(key === 'down' && this.y < 395) {
             this.y += 83;
-        };
+        }
     }
 };
 
