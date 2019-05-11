@@ -2,6 +2,8 @@
 
 A Classic Arcade Game Clone.
 
+LIVE PREVIEW => **[https://ahmedelaguab.github.io/arcade-game/](https://ahmedelaguab.github.io/arcade-game/).**
+
 
 ## Getting Started
 
